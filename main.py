@@ -25,6 +25,8 @@ async def on_startup():
 async def index():
     return {"message": "Api is running"}
 
+api_router = APIRouter()
+
 app.include_router(user_router, prefix="/api/v1")
 app.include_router(user_todo_router, prefix="/api/v1")
 app.include_router(todo_router, prefix="/api/v1")
