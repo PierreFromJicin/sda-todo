@@ -1,4 +1,4 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, APIRouter
 
 from app.controllers.Todo.TodoController import todo_router
 from app.controllers.User.UserController import user_router
